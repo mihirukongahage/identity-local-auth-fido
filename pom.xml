@@ -321,6 +321,23 @@
                 <artifactId>cxf-rt-rs-service-description</artifactId>
                 <version>${org.apache.cxf.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.webauthn4j</groupId>
+                <artifactId>webauthn4j-core</artifactId>
+                <version>${webauthn4j.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.webauthn4j</groupId>
+                <artifactId>webauthn4j-metadata</artifactId>
+                <version>${webauthn4j.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${jsr310.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -358,6 +375,8 @@
         <maven.build.helper.plugin.version>1.8</maven.build.helper.plugin.version>
         <orbit.yubico.webauthn.version>1.3.0.wso2v3</orbit.yubico.webauthn.version>
         <yubico.webauthn.version>1.3.0</yubico.webauthn.version>
+        <webauthn4j.version>0.14.1.RELEASE</webauthn4j.version>
+        <jsr310.version>2.11.4</jsr310.version>
     </properties>
 
     <modules>
